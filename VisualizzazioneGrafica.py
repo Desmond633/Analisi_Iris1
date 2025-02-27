@@ -1,0 +1,11 @@
+plt.figure(figsize=(12, 5))
+sns.boxplot(x="species", y="sepal_length", data=df)
+plt.title("Distribuzione della lunghezza del sepalo per specie")
+plt.show()
+print("Il boxplot mostra la distribuzione della lunghezza del sepalo per ciascuna specie, evidenziando differenze tra di esse.")
+
+plt.figure(figsize=(8, 6))
+sns.scatterplot(x="sepal_length", y="sepal_width", hue="species", data=df)
+plt.title("Distribuzione delle lunghezze e larghezze dei sepali")
+plt.show()
+print("Il grafico a dispersione mostra la relazione tra lunghezza e larghezza del sepalo per le diverse specie, evidenziando la separabilità dei dati.")
